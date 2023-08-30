@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="shop.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img id="logo" src="shop.avif" height="40px" width="60px"></img>
+        <h1 id="title">Shop List</h1>
+        
+    </header>
+    <form id="item-form">
+        <div class="form-control">
+        <input
+        id="item-input" 
+        name="item"
+        type="text"
+        placeholder="Enter item" />
+       <!-- select -->
+   <select id="priority-input" 
+   name="priority"
+   class="form-input">
+   <option value="0">select priority</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+</select>
+    <button type="submit" class="btn">+ Add item</button>
+   <div class="filter">
+    <input 
+     type="text"
+     class="form-input-filter"
+     id="filter-input"
+     placeholder="Filter item" />
+   
+   </div> 
+   
+
+</div>
+</form>
+    <div class="buttons-list ">
+        <ul class="items ">
+            <!-- <li class="list-item">
+                <span class="item-text">Kela</span>
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="list-item">
+                <span class="item-text">mango</span>
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark" ></i>
+                </button>
+            </li>
+            <li class="list-item">
+                <span class="item-text">shake</span>
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark" ></i>
+                </button>
+            </li>
+            <li class="list-item">
+                <span class="item-text">nuts</span>
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark" ></i>
+                </button>
+            </li> -->
+        </ul>
+    </div>
+    <button id="clear" type="submit" class="btn">Clear All</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/item-form.js"></script>
+</body>
+</html>

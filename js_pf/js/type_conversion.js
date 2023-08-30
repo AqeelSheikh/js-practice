@@ -1,0 +1,12 @@
+let amount='100';
+let num='99.5';
+// amount=parseInt(amount);
+// amount=+amount;
+amount=Number(amount);
+amount=amount.toString();
+amount=String(amount);
+console.log(amount,typeof amount);
+num=parseFloat(num);
+let bool=1;
+bool=Boolean(bool);
+console.log(bool,typeof bool);

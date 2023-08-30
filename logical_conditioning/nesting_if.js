@@ -1,0 +1,12 @@
+const d=new Date(10,30,2022,8,0,0);
+const hour=d.getHours();
+if(hour<12){
+    console.log('good morning');
+}
+    else if(hour<18){
+        console.log('good afternoon');
+    }
+else{
+    console.log('good night')
+}
+    
